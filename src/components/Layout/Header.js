@@ -1,14 +1,13 @@
 import React from "react";
 import { AppBar, Box, Toolbar, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import logo from '../../images/logo.png'
-
+import logo from "../../images/logo.png";
 
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
 
 const useStyles = makeStyles({
-  typoStle: {
+  typoStyle: {
     color: "goldenrod",
     flexGrow: 1,
   },
@@ -17,15 +16,20 @@ const Header = () => {
   const classes = useStyles();
   return (
     <Box>
-      <AppBar component={"nav"} sx={{ bgcolor: "#1A1A19" }}>
+      <AppBar component={"nav"} sx={{ bgcolor: "#1A1A19"}}>
         <Toolbar>
           <Typography
+            className={classes.typoStyle}
             color={"goldenrod"}
             variant="h6"
             component="div"
             sx={{ flexGrow: 1 }}
           >
-            <img src={logo} alt="logo" style={{marginTop:"6px", height:"80px",width:"100px" }} />
+            <img
+              src={logo}
+              alt="logo"
+              style={{ marginTop: "6px", height: "80px", width: "100px" }}
+            />
           </Typography>
           <Box>
             <ul className="navigation-menu">

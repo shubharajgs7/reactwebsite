@@ -5,8 +5,7 @@ import home from "../images/home.jpg";
 import "../styles/HomeStyles.css";
 
 const Home = () => {
-  return (
-    <Layout>
+  return <Layout>
       <div className="home" style={{ backgroundImage: `url(${home})` }}>
         <div
           style={{
@@ -25,7 +24,6 @@ const Home = () => {
             </h4>
           </marquee>
         </div>
-
         <div className="headerContainer">
           <h1
             style={{
@@ -53,9 +51,8 @@ const Home = () => {
             <button style={{ alignItems: "center" }}>ORDER NOW</button>
           </Link>
         </div>
-      </div>
-    </Layout>
-  );
+      </div></Layout>
+  
 };
 
 export default Home;

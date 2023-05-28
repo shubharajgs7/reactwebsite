@@ -2,11 +2,11 @@ import React from "react";
 import Layout from "./../components/Layout/Layout";
 import { Box, Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import axios from "axios";
 
 const useStyles = makeStyles({
   boxStyle: {
-    my: 15,
+    marginTop: "40px",
+    margingBottom: "40px",
     textAlign: "center",
     padding: 2,
   },
