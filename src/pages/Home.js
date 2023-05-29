@@ -17,12 +17,6 @@ const Home = () => {
             textAlign: "center",
           }}
         >
-          <marquee behavior="scroll" direction="left">
-            <h4 style={{ color: "white", margin: "0" }}>
-              Time is running out! Grab the excitement with a limited-time
-              offer: 30% off on all orders until midnight!
-            </h4>
-          </marquee>
         </div>
         <div className="headerContainer">
           <h1
